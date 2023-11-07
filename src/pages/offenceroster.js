@@ -3,33 +3,54 @@ import PlayerProfile from '@/app/components/playerprofile';
 import Navbar from '@/app/components/nav';
 import Footer from '@/app/components/footer';
 
+
 const players = [
   {
     id: "p1",
     position: "QB",
     name: "Yannick Ledermann",
-    image: "/offence.png",
+    image: "/yannick.jpeg",
     number: "1",
-    nationalityIcon: "/path-to-nationality-icon.jpg",
-    buttonText: "View Profile"
+    nationalityIcon: "/swiss.jpeg",
+    buttonText: "View Profile",
+    internalAwards: ["2022: Offensive Captain"], // Array of awards
+    athleticSuccesses: [
+      "2021: Vize-Meister Liga C",
+      "2020: Vize-Meister Fall Cup Liga C",
+      "2019: Vize-Meister Liga C Ost"
+    ], // Array of successes
+    age: "20", // Add the actual age here
+    height: "1.78 m", // Add the actual height here
+    weight: "80 Kg", // Add the actual weight here
+    season: "5", // Add the actual season here
+    sinceSHARK: "2018", // Add the actual sinceSHARK here
+    formerClubs: "--" // Add the actual former clubs here
   },
   {
     id: "p2",
     position: "RB",
     name: "Marc Hermann",
-    image: "/offence.png",
-    number: "22",
-    nationalityIcon: "/path-to-nationality-icon2.jpg",
-    buttonText: "View Profile"
+    image: "/marchermann.jpeg",
+    number: "24",
+    nationalityIcon: "/swiss.jpeg",
+    buttonText: "View Profile",
+    internalAwards: "2022: Offensive Captain", // Add the actual internal awards here
+    athleticSuccesses: "2021: Vize-Meister Liga C", // Add the actual athletic successes here
+    age: "19", // Add the actual age here
+    height: "1.78 m", // Add the actual height here
+    weight: "80 Kg", // Add the actual weight here
+    season: "5", // Add the actual season here
+    sinceSHARK: "2018", // Add the actual sinceSHARK here
+    formerClubs: "--" // Add the actual former clubs here
   },
-  
+
   {
     id: "p3",
     position: "RB",
-    name: "Alessio sacullo",
+    name: "Tyler Leemann",
     image: "/offence.png",
-    number: "22",
-    nationalityIcon: "/path-to-nationality-icon2.jpg",
+    number: "85",
+    nationalityIcon: "/swiss.jpeg",
     buttonText: "View Profile"
   },
 
@@ -60,31 +81,14 @@ export default function OffenseRoster() {
   };
 
   return (
-    <div className="relative min-h-screen bg-cover bg-center" style={{ backgroundImage: 'url("/Background.png")' }}>
-      {/* Sticky Navbar */}
-      <div className="fixed top-0 left-0 w-full z-50">
-        <Navbar />
-      </div>
-      
-      {/* Title */}
-      <div className="text-center pt-20"> {/* Adjust padding-top as necessary */}
-        <h1 className="text-6xl font-bold text-white">SHARKS</h1>
-      </div>
-
-      {/* Spacing for the first component */}
-      <div className="pt-16"> {/* This adds padding-top to make space for the sticky navbar */}
-        {players.map((player, index) => (
-          <div key={player.id} className="my-4"> {/* This adds margin to the y-axis (top and bottom) for each PlayerProfile component */}
-            <PlayerProfile
-              position={player.position}
-              name={player.name}
-              image={player.image}
-              number={player.number}
-              nationalityIcon={player.nationalityIcon}
-              buttonText={player.buttonText}
-              onButtonClick={() => handleButtonClick(player.id)}
-            />
-          </div>
+    <div className="relative min-h-screen bg-cover bg-center bg-fixed" style={{ backgroundImage: 'url("/Background.png")' }}>
+      <Navbar fixed />
+      <div className="pt-8">
+        <div className="text-center">
+          <h1 className="text-6xl font-bold text-white">Offense Roster</h1>
+        </div>
+        {players.map((player) => (
+          <PlayerProfile key={player.id} {...player} onButtonClick={() => handleButtonClick(player.id)} />
         ))}
       </div>
       <Footer />
