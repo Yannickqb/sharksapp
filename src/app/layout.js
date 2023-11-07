@@ -1,12 +1,9 @@
 import '../app/styles/globals.css';
-import Nav from '@/app/components/Nav';
 
-function MyApp({ Component, pageProps }) {
+export default function RootLayout({ children }) {
   return (
     <div>
-      <Component {...pageProps} />
+      {children}
     </div>
   );
 }
-
-export default MyApp;
