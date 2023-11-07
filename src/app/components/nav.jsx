@@ -2,12 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import BackgroundImage from '../../../public/background.png';
-import Background2Image from '../../../public/background2.png';
 
 const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
-  const [randomImage, setRandomImage] = useState(null);
 
   useEffect(() => {
     const images = [BackgroundImage, Background2Image];
