@@ -31,7 +31,7 @@ const Navbar = () => {
             <li><a>Item 3</a></li>
           </ul>
         </div>
-        <Image src={"/SharksLogo.png"} alt="Sharks Logo" width={150} height={50} />
+        <Image src={"/SharksLogotransparent.png"} alt="Sharks Logo" width={150} height={50} />
       </div>
       <div className="navbar-center hidden lg:flex">
         <span className="text-5xl font-bold" style={{ color: '#fdd816' }}>SHARKS</span>

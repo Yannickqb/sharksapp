@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer className="footer p-10 bg-neutral text-neutral-content mt-20">
             <aside>
-                <img src="/sharkslogo.png" alt="Schaffhausen Sharks Logo" width="150" height="150" />
+                <img src="/sharkslogotransparent.png" alt="Schaffhausen Sharks Logo" width="150" height="150" />
                 <p>Schaffhausen Sharks<br />American Fottball Club seit 1992</p>
             </aside>
             <nav>
