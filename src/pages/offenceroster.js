@@ -34,9 +34,13 @@ const players = [
     number: "24",
     nationalityIcon: "/swiss.jpeg",
     buttonText: "View Profile",
-    internalAwards: "2022: Offensive Captain", // Add the actual internal awards here
-    athleticSuccesses: "2021: Vize-Meister Liga C", // Add the actual athletic successes here
-    age: "19", // Add the actual age here
+    internalAwards: ["2022: Offensive Captain"], // Array of awards
+    athleticSuccesses: [
+      "2021: Vize-Meister Liga C",
+      "2020: Vize-Meister Fall Cup Liga C",
+      "2019: Vize-Meister Liga C Ost"
+    ], // Array of successes
+    age: "20", // Add the actual age here
     height: "1.78 m", // Add the actual height here
     weight: "80 Kg", // Add the actual weight here
     season: "5", // Add the actual season here
@@ -51,7 +55,15 @@ const players = [
     image: "/offence.png",
     number: "85",
     nationalityIcon: "/swiss.jpeg",
-    buttonText: "View Profile"
+    buttonText: "View Profile",
+    internalAwards: "2022: Offensive Captain", // Add the actual internal awards here
+    athleticSuccesses: "2021: Vize-Meister Liga C", // Add the actual athletic successes here
+    age: "19", // Add the actual age here
+    height: "1.78 m", // Add the actual height here
+    weight: "80 Kg", // Add the actual weight here
+    season: "5", // Add the actual season here
+    sinceSHARK: "2018", // Add the actual sinceSHARK here
+    formerClubs: "--" // Add the actual former clubs here
   },
 
   {
@@ -61,7 +73,15 @@ const players = [
     image: "/offence.png",
     number: "22",
     nationalityIcon: "/path-to-nationality-icon2.jpg",
-    buttonText: "View Profile"
+    buttonText: "View Profile",
+    internalAwards: "2022: Offensive Captain", // Add the actual internal awards here
+    athleticSuccesses: "2021: Vize-Meister Liga C", // Add the actual athletic successes here
+    age: "19", // Add the actual age here
+    height: "1.78 m", // Add the actual height here
+    weight: "80 Kg", // Add the actual weight here
+    season: "5", // Add the actual season here
+    sinceSHARK: "2018", // Add the actual sinceSHARK here
+    formerClubs: "--" // Add the actual former clubs here
   },
   {
     id: "p20",
