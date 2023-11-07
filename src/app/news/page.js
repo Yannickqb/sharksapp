@@ -1,6 +1,6 @@
 // pages/news.js
 // pages/index.js
-import Navbar from '../app/components/nav';
+import Navbar from '../components/nav';
 import Newhc from '@/app/components/news/newhc';
 
 const News = () => {

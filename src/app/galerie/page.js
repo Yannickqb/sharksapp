@@ -1,4 +1,4 @@
-import Navbar from '../app/components/nav';
+import Navbar from '../components/nav';
 import Footer from '@/app/components/footer';
 import Galerieelement from '@/app/components/galerieelement';
 
