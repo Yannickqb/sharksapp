@@ -1,6 +1,7 @@
 // pages/index.js
-import Navbar from '../app/components/nav';
-import Hero from '../app/components/hero';
+import Navbar from './components/nav';
+import Hero from './components/hero';
+import Footer from '@/app/components/footer';
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <div className="container mx-auto mt-8">
         <Hero/>
       </div>
+      <Footer/>
     </div>
   );
 };

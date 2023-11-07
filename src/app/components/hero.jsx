@@ -3,7 +3,6 @@ import React from 'react';
 export default function ContactForm() {
   return (
     <div className="hero min-h-screen bg-base-200">
-      <h1 className="text-5xl font-bold">Join the Sharks Off-Season Training!</h1>
       <div className="hero-content flex-col lg:flex-row justify-between">
         <img src="/tryoutsflier.jpg" alt="American Football" className="mb-6 lg:mb-0 lg:mr-8 rounded-lg shadow-2xl" style={{ maxHeight: '100%' }} />
         <div className="flex-1">
@@ -35,7 +34,7 @@ export default function ContactForm() {
                 <textarea placeholder="Deine Nachricht" className="textarea textarea-bordered" required></textarea>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Email Senden</button>
+                <button className="btn">Email Senden</button>
               </div>
             </form>
           </div>

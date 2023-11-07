@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -41,7 +42,7 @@ const Navbar = () => {
           <li><Link href="/" className="text-xl" style={{ color: '#fdd816' }}>Home</Link></li>
           <li><Link href="/news" className="text-xl" style={{ color: '#fdd816' }}>News</Link></li>
           <li><Link href="/team" className="text-xl" style={{ color: '#fdd816' }}>Teams</Link></li>
-          <li><Link href="/contactr" className="text-xl" style={{ color: '#fdd816' }}>Teams</Link></li>
+          <li><Link href="/galerie" className="text-xl" style={{ color: '#fdd816' }}>Galerie</Link></li>
         </ul>
       </div>
     </div>
