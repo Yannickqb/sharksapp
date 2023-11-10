@@ -1,11 +1,9 @@
 import '../app/styles/globals.css';
 
-function MyApp({ children }) {
+export default function RootLayout({ children }) {
   return (
     <div>
       {children}
     </div>
   );
 }
-
-export default MyApp;
