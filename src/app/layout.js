@@ -1,10 +1,9 @@
 import '../app/styles/globals.css';
-import Nav from '@/app/components/Nav';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ children }) {
   return (
     <div>
-      <Component {...pageProps} />
+      {children}
     </div>
   );
 }
