@@ -33,15 +33,13 @@ const Navbar = () => {
         </div>
         <Image src={"/SharksLogotransparent.png"} alt="Sharks Logo" width={150} height={50} />
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <span className="text-5xl font-bold" style={{ color: '#fdd816' }}>SHARKS</span>
-      </div>
+     
       <div className="navbar-end">
         <ul className="menu menu-horizontal px-1">
           <li><Link href="/" className="text-xl" style={{ color: '#fdd816' }}>Home</Link></li>
           <li><Link href="/news" className="text-xl" style={{ color: '#fdd816' }}>News</Link></li>
           <li><Link href="/team" className="text-xl" style={{ color: '#fdd816' }}>Teams</Link></li>
-          <li><Link href="/galerie" className="text-xl" style={{ color: '#fdd816' }}>Galerie</Link></li>
+          <li><Link href="/verein" className="text-xl" style={{ color: '#fdd816' }}>Verein</Link></li>
         </ul>
       </div>
     </div>
