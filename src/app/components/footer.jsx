@@ -1,11 +1,19 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
+import sharksLogo from '../../public/sharkslogotransparent.png'; // Adjust the import path as necessary
 
 export default function Footer() {
     return (
         <footer className="footer p-10 bg-neutral text-neutral-content mt-20">
             <aside>
-                <img src="/sharkslogotransparent.png" alt="Schaffhausen Sharks Logo" width="150" height="150" />
-                <p>Schaffhausen Sharks<br />American Fottball Club seit 1992</p>
+                <Image 
+                    src={sharksLogo} 
+                    alt="Schaffhausen Sharks Logo" 
+                    width={150} 
+                    height={150} 
+                    // Add any additional props as needed
+                />
+                <p>Schaffhausen Sharks<br />American Football Club seit 1992</p>
             </aside>
             <nav>
                 <header className="footer-title" style={{ color: '#fdd816' }}>Social</header>
